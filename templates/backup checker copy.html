@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>Spell Checker</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        textarea {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+        .output {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            white-space: pre-wrap; /* Ensures that whitespaces are preserved */
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var text = document.forms["checkerForm"]["input_text"].value;
+            if (text.trim() === '') {
+                alert('Input cannot be empty or contain only spaces.');
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <form name="checkerForm" action="/checker" method="post" onsubmit="return validateForm()">
+            <textarea name="input_text" placeholder="Enter text here..." required></textarea>
+            <button type="submit">Check</button>
+        </form>
+        <textarea readonly>{{ check_accuracy }}</textarea>
+        <textarea readonly>{{ original_text }}</textarea>
+        <textarea readonly>{{ output_text }}</textarea>
+        <div>
+            <h2>Highlighted Words</h2>
+            <div class="output">{{ highlighted_text|safe }}</div>
+        </div>
+    </div>
+</body>
+</html>

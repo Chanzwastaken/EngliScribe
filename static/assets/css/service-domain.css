@@ -1,0 +1,113 @@
+.service-domain-icon {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 500%; /* Make it a circle */
+    background-color: #C09ADB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Space between logo and header */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-domain-icon-image {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.service-domain-header {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-domain-description {
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+.section-domain-main-button {
+    display: block;
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #fff;
+    color: #5360FD;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    transition: all .3s;
+  }
+  
+.section-domain-main-button:hover {
+    background-color: #5360FD;
+    color: #fff;
+}
+
+.services-domain-sub-header {
+    font-family: "Poppins";
+}
+
+.file-input-wrapper {
+    display: inline-block;
+    text-align: center; 
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: #fff;
+    color: #5360FD;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 25px;
+    border:solid 2px black;
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+.file-input-wrapper:hover {
+    background-color: #5360FD;
+    color: #fff;
+}
+
+
+
+.service-domain-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.service-domain-section-heading {
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+}
+
+.paragraph-container {
+    background-color: #f2f2f2; /* Light gray background */
+    border: 1px solid black; /* Black outline */
+    padding: 20px;
+    border-radius: 5px;
+    max-height: 400px; /* Maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    text-align: justify;
+    font-size: 14px;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+

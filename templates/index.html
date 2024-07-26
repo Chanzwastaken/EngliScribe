@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>EngliScribe - Molding Fluency, One Word at a Time!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+
+
+    <!-- Additional CSS Files -->
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/owl.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/mainstyling.css') }}">
+
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css"> -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="/" class="logo">
+                      <img src="{{ url_for('static', filename='assets/images/engscribd_white.png') }}" alt="company logo" style="height: 76px; margin-right: 20px; padding-right: 20px;">
+                      <!-- <img src="{{ url_for('static', filename='assets/images/logo.svg') }}" alt="company logo" style="height: 56px; margin-right: 20px; padding-right: 20px; border-right: 1px solid rgba(250, 250, 250, 0.3);"> -->
+                      <!-- <h1><img src="{{ url_for('static', filename='assets/images/logofix.png') }}" alt="company logo" style="height: 50%; width: 50%;"/></h1> -->
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Serach Start ***** -->
+                    <!-- <div class="search-input" style="margin-left: 20px;">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div> -->
+                    <!-- ***** Serach Start ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <!-- <li class="scroll-to-section"><a href="#services">Services</a></li> -->
+                      <li class="scroll-to-section"><a href="#services">Services</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Courses</a></li>
+                      <!-- <li class="scroll-to-section"><a href="#team">Team</a></li> -->
+                      <li class="scroll-to-section"><a href="#events">Events</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Our Services</span>
+                <h2>With EngliScribe, Learn English is "EZ PZ"!</h2>
+                <p>With EngliScribe, learning English is effortless. Our platform features a built-in spelling checker, immersive reader, and OCR capabilities, enhancing your learning experience. Our services ensure mastering English is both effective and enjoyable. Join us today to elevate your language skills with EngliScribe!</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#services">Check Our Services</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="https://youtu.be/_Z_FOtfKyfo?si=8S8usXt5UuZpP1aW"><i class="fa fa-play"></i> What's language?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Best Result</span>
+                <h2>Get The Best Result Out of Your Effort</h2>
+                <p>Learning a new language is a journey that opens doors to new cultures, connections, and opportunities. Embrace the challenges, celebrate your progress, and remember that every word learned brings you closer to fluency. Stay consistent, stay curious, and enjoy the richness of mastering a new way to communicate!</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#services">Check Our Services</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="https://youtu.be/o_XVt5rdpFY?si=V-CHVnqnHYRDHd0k"><i class="fa fa-play"></i> How to learn a language?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="header-text">
+                <span class="category">Online Learning</span>
+                <h2>Learn Anywhere, Anytime</h2>
+                <p>Discover the freedom of online learning—master skills at your own pace, on your schedule. With access to courses anytime, anywhere, you can elevate your knowledge and career prospects effortlessly. Enroll today and transform your future with flexibility and convenience!</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#courses">Our Courses</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#services"><i class="fa fa-play"></i> What's EngliScribe?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Services</h6>
+            <h2>Our Services</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="{{ url_for('static', filename='assets/images/service-01.png') }}" alt="online ocr">
+            </div>
+            <div class="main-content">
+              <h4>Online OCR</h4>
+              <p>Scan and upload images of your English text documents!</p>
+              <div class="main-button">
+                <a href="/ocr">Try It Now ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="{{ url_for('static', filename='assets/images/service-02.png') }}" alt="short courses">
+            </div>
+            <div class="main-content">
+              <h4>Online Correction</h4>
+              <p>You can quickly make English corrections to your text documents!</p>
+              <div class="main-button">
+                <a href="/checker">Try It Now ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="{{ url_for('static', filename='assets/images/service-03.png') }}" alt="web experts">
+            </div>
+            <div class="main-content">
+              <h4>Immersive Reader</h4>
+              <p>You can also learn English 100x easier with the help of audios and visuals!</p>
+              <div class="main-button">
+                <a href="/readme">Try It Now ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="{{ url_for('static', filename='assets/images/summarize.png') }}" alt="short courses">
+              </div>
+              <div class="main-content">
+                <h4>Text Summarization</h4>
+                <p>Summarize your long texts into simple paragraphs! More easier to read!</p>
+                <div class="main-button">
+                  <a href="/text_summarization">Try It Now ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="{{ url_for('static', filename='assets/images/robokos.png') }}" alt="short courses">
+              </div>
+              <div class="main-content">
+                <h4>Interactive Chatbot</h4>
+                <p>You can communicate with chatbot and practice your language skills!</p>
+                <div class="main-button">
+                  <a href="/chat_app">Try It Now ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-4 col-md-6">
+            <div class="service-item">
+              <div class="icon">
+                <img src="{{ url_for('static', filename='assets/images/live.png') }}" alt="short courses">
+              </div>
+              <div class="main-content">
+                <h4>EoA for Disabilities</h4>
+                <p>Ease of Access for disabilities people, make the education more accessible!</p>
+                <div class="main-button">
+                  <a href="#">Coming Soon !</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="{{ url_for('static', filename='assets/images/classification.png') }}" alt="short courses">
+            </div>
+            <div class="main-content">
+              <h4>Text Classification</h4>
+              <p>Classify your text easily and quickly! 2x faster than manual!</p>
+              <div class="main-button">
+                <a href="#">Coming Soon !</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="section about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Where shall we begin?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  At EngliScribe, we understand that perfecting your language skills can be challenging, especially when it comes to grammar. That's why we created EngliScribe: to provide a <strong>seamless and intelligent solution</strong> for students to enhance their language skills. We begin by offering a user-friendly platform that integrates advanced artificial intelligence to review and improve your documents, ensuring that you can present your ideas <strong>clearly and professionally.</strong>
+                  <!-- Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. -->
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How do we work together?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Working with EngliScribe is <strong>simple</strong> and <strong>collaborative</strong>. Our intuitive platform allows you to upload your documents <strong>easily</strong>. Our tech then <strong>analyzes</strong> your text, <strong>identifies</strong> grammatical errors, and <strong>provides precise corrections and suggestions for improvement.</strong> We believe in empowering you with the knowledge to learn from your mistakes, so we also offer detailed explanations for each correction. Our goal is to help you become a better writer while ensuring your documents are error-free.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Why EngliScribe is the best?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  EngliScribe stands out as the premier choice for students seeking to improve their writing because of <strong>our cutting-edge technology and user-centric approach.</strong> Our tech is designed to analyze texts as accurate as possible, making it <strong>more reliable</strong> than manual grammar checkers. We continuously update our algorithms to incorporate the latest advancements in natural language processing, ensuring that you always get the best possible feedback. Furthermore, our platform is designed with <strong>ease of use</strong> in mind, so you can focus on your writing without worrying about technical complexities.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do we get the best support?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Absolutely!</strong> At EngliScribe, we are committed to <strong>providing exceptional support to our users.</strong> Our dedicated support team is always ready to assist you with any questions or issues you may encounter. Whether you need help navigating the platform, understanding corrections, or have suggestions for improvement, <strong>we're here to listen and help.</strong> We believe that providing top-notch support is key to helping you achieve your learning goals.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h2>What Makes Us The Best Online Language Learning Platform?</h2>
+            <p>EngliScribe is more than a grammar-checker; it's a comprehensive language learning tool. Constantly updated with the latest in AI technology and language research, our user-friendly platform offers detailed explanations and exceptional support, making EngliScribe the ultimate choice for mastering languages.</p>
+            <div class="main-button" style="margin-top: 30px;">
+              <a href="#">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Courses</h6>
+            <h2>Latest Courses</h2>
+          </div>
+        </div>
+      </div>
+
+      <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".generalenglish">English</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".toefl">TOEFL</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".ielts">IELTS</a>
+        </li>
+      </ul>
+
+      <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 generalenglish">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://saweria.co/rickyindrag"><img src="{{ url_for('static', filename='assets/images/course-01.jpg') }}" alt=""></a>
+              <span class="category">English</span>
+              <span class="price"><h6><em>IDR</em>250k</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Ricky Indra Gunawan</span>
+              <h4>Learn Basic English Tenses</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  toefl">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://karyakarsa.com/rickyig/rewards"><img src="{{ url_for('static', filename='assets/images/course-04.jpg') }}" alt=""></a>
+              <span class="category">TOEFL</span>
+              <span class="price"><h6><em>IDR</em>500k</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Ricky Indra Gunawan</span>
+              <h4>TOEFL-iBT 101</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  ielts">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="https://karyakarsa.com/rickyig/rewards"><img src="{{ url_for('static', filename='assets/images/course-05.jpg') }}" alt=""></a>
+              <span class="category">IELTS</span>
+              <span class="price"><h6><em>IDR</em>500k</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Ricky Indra Gunawan</span>
+              <h4>Intensive Writing for IELTS</h4>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-04.jpg') }}" alt=""></a>
+              <span class="category">Development</span>
+              <span class="price"><h6><em>$</em>450</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Stella Blair</span>
+              <h4>Online Learning Steps</h4>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-05.jpg') }}" alt=""></a>
+              <span class="category">Wordpress</span>
+              <span class="price"><h6><em>$</em>320</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Sophia Rose</span>
+              <h4>Be a WordPress Master</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-06.jpg') }}" alt=""></a>
+              <span class="category">Webdesign</span>
+              <span class="price"><h6><em>$</em>240</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">David Hutson</span>
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+      <!-- Contoh Menu Courses -->
+      <!-- <ul class="event_filter">
+        <li>
+          <a class="is_active" href="#!" data-filter="*">Show All</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".design">Webdesign</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".development">Development</a>
+        </li>
+        <li>
+          <a href="#!" data-filter=".wordpress">Wordpress</a>
+        </li>
+      </ul> -->
+      <!-- END Contoh Menu Courses -->
+
+      <!-- Contoh Courses -->
+
+      <!-- <div class="row event_box">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-01.jpg') }}" alt=""></a>
+              <span class="category">Webdesign</span>
+              <span class="price"><h6><em>$</em>160</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Stella Blair</span>
+              <h4>Learn Web Design</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-02.jpg') }}" alt=""></a>
+              <span class="category">Development</span>
+              <span class="price"><h6><em>$</em>340</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Cindy Walker</span>
+              <h4>Web Development Tips</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-03.jpg') }}" alt=""></a>
+              <span class="category">Wordpress</span>
+              <span class="price"><h6><em>$</em>640</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">David Hutson</span>
+              <h4>Latest Web Trends</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-04.jpg') }}" alt=""></a>
+              <span class="category">Development</span>
+              <span class="price"><h6><em>$</em>450</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Stella Blair</span>
+              <h4>Online Learning Steps</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-05.jpg') }}" alt=""></a>
+              <span class="category">Wordpress</span>
+              <span class="price"><h6><em>$</em>320</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">Sophia Rose</span>
+              <h4>Be a WordPress Master</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
+          <div class="events_item">
+            <div class="thumb">
+              <a href="#"><img src="{{ url_for('static', filename='assets/images/course-06.jpg') }}" alt=""></a>
+              <span class="category">Webdesign</span>
+              <span class="price"><h6><em>$</em>240</h6></span>
+            </div>
+            <div class="down-content">
+              <span class="author">David Hutson</span>
+              <h4>Full Stack Developer</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- END Contoh Courses -->
+  </section>
+
+  <div class="section fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                   <p class="count-text ">Happy Students</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="10" data-speed="1000"></h2>
+                  <p class="count-text ">Course Hours</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="3" data-speed="1000"></h2>
+                  <p class="count-text ">Services</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="counter end">
+                  <h2 class="timer count-title count-number" data-to="1" data-speed="1000"></h2>
+                  <p class="count-text ">Community Partners</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONOTH TEAM -->
+  <!-- <div class="team section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="{{ url_for('static', filename='assets/images/member-01.jpg') }}" alt="">
+              <span class="category">UX Teacher</span>
+              <h4>Sophia Rose</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="{{ url_for('static', filename='assets/images/member-02.jpg') }}" alt="">
+              <span class="category">Graphic Teacher</span>
+              <h4>Cindy Walker</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="{{ url_for('static', filename='assets/images/member-03.jpg') }}" alt="">
+              <span class="category">Full Stack Master</span>
+              <h4>David Hutson</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="main-content">
+              <img src="{{ url_for('static', filename='assets/images/member-04.jpg') }}" alt="">
+              <span class="category">Digital Animator</span>
+              <h4>Stella Blair</h4>
+              <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  -->
+
+  <div class="section testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="owl-carousel owl-testimonials">
+            <div class="item">
+              <p>“EngliScribe's OCR feature is a game-changer! I can easily scan and edit my handwritten notes, saving me so much time. It's incredibly accurate and user-friendly.”</p>
+              <div class="author">
+                <img src="{{ url_for('static', filename='assets/images/testimonial-author-1.png') }}" alt="">
+                <span class="category">Student</span>
+                <h4>Jessica Roberts</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“I love the Immersive Reader feature! It helps me focus on my reading assignments and understand complex texts better. It's a fantastic tool for beginners.”</p>
+              <div class="author">
+                <img src="{{ url_for('static', filename='assets/images/testimonial-author-2.png') }}" alt="">
+                <span class="category">Undergraduate Student - English Major</span>
+                <h4>Michael Adams</h4>
+              </div>
+            </div>
+            <div class="item">
+              <p>“The spell-checking feature on EngliScribe is phenomenal. It catches even the smallest errors my students make, helping them learn and improve their writing skills significantly.”</p>
+              <div class="author">
+                <img src="{{ url_for('static', filename='assets/images/testimonial-author-3.png') }}" alt="">
+                <span class="category">English Teacher</span>
+                <h4>Emily Clark</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>TESTIMONIALS</h6>
+            <h2>What they say about us?</h2>
+            <p>Our users love EngliScribe! Read their testimonials to see how our innovative features like OCR, spell checking, and Immersive Reader have transformed their learning and writing experiences. From students to teachers, everyone is impressed with the accuracy, ease of use, and effectiveness of our platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Schedule</h6>
+            <h2>Upcoming Events</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="{{ url_for('static', filename='assets/images/event-01.jpg') }}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Pre-Launching</span>
+                    <h4>Demo Day 1</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>03 July 2024</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>10 Minutes</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>FREE!</h6>
+                  </li>
+                </ul>
+                <a href="https://tinyurl.com/MiniDemoDay-D1"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="{{ url_for('static', filename='assets/images/event-02.jpg') }}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Pre-Launching</span>
+                    <h4>The Importance of Languages Skills in Modern Era</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>05 July 2024</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>2 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>FREE!</h6>
+                  </li>
+                </ul>
+                <a href="https://forms.office.com/r/St9kmw7n3t"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="{{ url_for('static', filename='assets/images/event-03.jpg') }}" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Pre-Launching</span>
+                    <h4>Learn English Grammar 1000x Faster!</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>18 July 2024</h6>
+                  </li>
+                  <li>
+                    <span>Duration:</span>
+                    <h6>2 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Price:</span>
+                    <h6>FREE!</h6>
+                  </li>
+                </ul>
+                <a href="https://forms.office.com/r/5ZhLg9gFBi"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h6>Contact Us</h6>
+            <h2>Feel free to contact us anytime</h2>
+            <p>Thank you for choosing our services! We provide you best services at absolutely peak. You may support us by sharing our services and your experiences using our services to your friends!</p>
+            <div class="special-offer">
+              <span class="offer">off<br><em>50%</em></span>
+              <h6>Valid until: <em>18 July 2024</em></h6>
+              <h4>Special Offer <em>50%</em> OFF!</h4>
+              <a href="https://saweria.co/rickyindrag"><i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" action="" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Molding Fluency, One Word at a Time!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/isotope.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/owl-carousel.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/counter.js') }}"></script>
+  <script src="{{ url_for('static', filename='assets/js/custom.js') }}"></script>
+
+  </body>
+</html>
