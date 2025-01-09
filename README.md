@@ -7,10 +7,11 @@
 EngliScribe is a website-based application that uses artificial intelligence as a solution for students to improve the language structure (grammar) of their documents. EngliScribe is designed to improve English literacy and fluency among Indonesian students. This project aims to address the low level of literacy and English language skills in Indonesia, which has a negative impact on access to information, employment opportunities, education, and global participation.
 
 ### Demo
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/rSCdGNUufy8/0.jpg)](https://www.youtube.com/watch?v=rSCdGNUufy8)
+[![Youtube](https://img.youtube.com/vi/rSCdGNUufy8/0.jpg)](https://www.youtube.com/watch?v=rSCdGNUufy8)
 
+### Recording & Presentation Folder
 
-
+[Click Here](https://onedrive.live.com/?id=F8157977D65CAAA6%21165&cid=F8157977D65CAAA6&redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvcyFBcWFxWE5aM2VSWDRnU1VWci0xODNVZjNFdTFzP2U9QVBSQmxw)
 
 ### Methods
 EngliScribe uses artificial intelligence (AI) to detect and correct grammatical errors in students' writing. The app also provides an immersive reader feature that helps users learn the language with audio and visual support for each word, making it inclusive for dyslexics.
